@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<table border="1" >
+    {% for user in users %}
+    <tr>
+    <td>{{ user.username }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

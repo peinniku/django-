@@ -1,0 +1,17 @@
+{% load my_tag %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>{{ num|add:'1' }}</p>
+<p>{{ var|default_if_none:'不存在' }}</p>
+<p>{{ as|default:'就没有' }}</p>
+<p>
+    {{ t1|date:'Y-m-d H:i:s' }}
+</p>
+<p>{{ num|sub }}</p>
+</body>
+</html>
